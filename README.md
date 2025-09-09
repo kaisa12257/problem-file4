@@ -1,1 +1,60 @@
 # problem-file4
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>웹 페이지의 구성 요소</title>
+  <style>
+    body {
+      background-color: linen;
+      color: green;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    h3 {
+      text-align: center;
+      color: darkred;
+    }
+    hr {
+      height: 5px;
+      border: solid grey;
+      background-color: grey;
+    }
+    span {
+      color: blue;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function show() {
+      document.getElementById("fig").src = "";
+    }
+
+    function hide() {
+      document.getElementById("fig").src = "Screenshot_20241220_121349_Gallery.jpg";
+    }
+  </script>
+</head>
+<body>
+
+  <h3>Elvis Presley</h3>
+
+  <hr>
+
+  <div>
+    <img id="fig" src="" alt="Elvis Presley" width="300">
+  </div>
+
+  
+    Elvis Presley 0|0|X7<br>
+    He was an American singer and actor. In November 1956,<br>
+    he made his film debut in
+    <span onmouseover="show()" onmouseout="hide()">Love Me Tender</span>.<br>
+    He is often referred to as
+    <span onmouseover="show()" onmouseout="hide()">
+      "the king of Rock and Roll"
+    </span>.
+
+</body>
+</html>
